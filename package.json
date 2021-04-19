@@ -8,7 +8,7 @@
     "eslint": "eslint . --ext js,jsx,ts,tsx --fix",
     "tslint": "tslint --exclude '**/node_modules/**' '**/*.{ts,tsx}'",
     "lint": "yarn eslint ; yarn stylelint ; yarn tslint",
-    "fix-styles": "stylelint --quiet 'src/**/*.{css,scss,tsx}' --fix",
+    "fix-styles": "stylelint --quiet '**/*.{css,scss,tsx}' --fix",
     "postinstall": "husky install"
   },
   "dependencies": {},
