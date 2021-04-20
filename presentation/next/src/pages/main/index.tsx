@@ -2,12 +2,12 @@ import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { NextPage } from 'next'
 import Link from 'next/link'
-import { ReactComponent as Logo } from '~/next/assets/images/logo.svg'
 import Layout from '~/next/components/Layout'
 import * as RepoActions from '~/next/store/Repo/actions'
 import { Main } from '~/next/styles/pages/main'
 import { Repo } from '~/next/types/store/Repo/state'
 import States from '~/next/types/store/rootStates'
+import { ReactComponent as Logo } from '../../assets/images/logo.svg'
 
 const Component: NextPage = () => {
   const dispatch = useDispatch()

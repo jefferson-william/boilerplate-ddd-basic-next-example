@@ -21,6 +21,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
-  "exclude": ["node_modules", "presentation/next/node_modules"],
+  "exclude": ["node_modules", "presentation/next/node_modules", "presentation/next/config-overrides.js"],
   "include": ["**/*.ts", "**/*.tsx"]
 }

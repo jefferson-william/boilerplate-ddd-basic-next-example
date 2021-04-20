@@ -2,10 +2,9 @@ import { produce } from 'immer'
 import { Reducer } from 'redux'
 import { INITIAL_STATE } from '~/next/store/Repo/state'
 import TYPES from '~/next/store/Repo/types'
-import Action from '~/next/types/lib/typesafe-actions'
 import State from '~/next/types/store/Repo/state'
 
-const reducer: Reducer<State, Action<State>> = (state = INITIAL_STATE, action) => {
+const reducer: Reducer<State> = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case TYPES.SET_REPOS:
       return produce(state, (draft: State) => {

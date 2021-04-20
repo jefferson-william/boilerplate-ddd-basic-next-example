@@ -10,7 +10,7 @@ export const store = () => {
 
   const middlewares = applyMiddleware(sagaMiddleware)
 
-  const myStore = createReduxStore<States, any, any, any>(rootReducer, middlewares)
+  const myStore = createReduxStore<States>(rootReducer, middlewares) as any
 
   myStore.sagaTask = sagaMiddleware.run(rootSaga)
 

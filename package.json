@@ -10,7 +10,6 @@
     "tslint": "tslint --exclude '**/node_modules/**' '**/*.{ts,tsx}'",
     "lint": "yarn eslint ; yarn stylelint ; yarn tslint",
     "fix-styles": "stylelint --quiet '**/*.{css,scss,ts,tsx}' --fix",
-    "lintstaged": "lint-staged",
     "postinstall": "husky install"
   },
   "dependencies": {},

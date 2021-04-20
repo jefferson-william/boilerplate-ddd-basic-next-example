@@ -2,13 +2,13 @@ import { useSelector } from 'react-redux'
 import { NextPage } from 'next'
 import Link from 'next/link'
 import { END } from 'redux-saga'
-import { ReactComponent as Logo } from '~/next/assets/images/logo.svg'
 import Layout from '~/next/components/Layout'
 import wrapperStore from '~/next/store'
 import * as RepoActions from '~/next/store/Repo/actions'
 import { Home } from '~/next/styles/pages/home'
 import { Repo } from '~/next/types/store/Repo/state'
 import States from '~/next/types/store/rootStates'
+import { ReactComponent as Logo } from '../../assets/images/logo.svg'
 
 const Component: NextPage = () => {
   const repos = useSelector<States, Repo[]>((state) => state.Repo.repos)

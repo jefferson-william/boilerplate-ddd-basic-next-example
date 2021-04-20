@@ -1,8 +1,7 @@
 import { HYDRATE } from 'next-redux-wrapper'
-import { combineReducers } from 'redux'
+import { combineReducers, Reducer } from 'redux'
 import Auth from '~/next/store/Auth/reducer'
 import Repo from '~/next/store/Repo/reducer'
-import Action from '~/next/types/lib/typesafe-actions'
 import States from '~/next/types/store/rootStates'
 
 export const combinedReducer = combineReducers({
@@ -10,7 +9,7 @@ export const combinedReducer = combineReducers({
   Repo,
 })
 
-const rootReducer = (state: States | undefined, action: Action<any>) => {
+const rootReducer: Reducer<States> = (state, action) => {
   if (action.type === HYDRATE) {
     const nextState = {
       ...state,

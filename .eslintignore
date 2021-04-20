@@ -1,4 +1,9 @@
-node_modules/
+**/node_modules/
+**/*.d.ts
+
 build/
 dist/
-**/*.d.ts
+
+presentation/.next/
+presentation/next/src/index.jsx
+presentation/next/config-overrides.js
