@@ -2,10 +2,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "~/*": [
+      "~/next/*": [
         "src/*"
       ],
-      "@/*": [
+      "~/next/public/*": [
         "public/*"
       ]
     }

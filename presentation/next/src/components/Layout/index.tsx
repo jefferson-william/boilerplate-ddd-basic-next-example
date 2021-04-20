@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import GlobalStyles from '~/styles/global'
+import GlobalStyles from '~/next/styles/global'
 
 const Layout: FC = ({ children }) => (
   <>

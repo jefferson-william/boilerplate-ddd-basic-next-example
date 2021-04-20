@@ -1,9 +1,9 @@
 import { produce } from 'immer'
 import { Reducer } from 'redux'
-import { INITIAL_STATE } from '~/store/Auth/state'
-import TYPES from '~/store/Auth/types'
-import Action from '~/types/lib/typesafe-actions'
-import State from '~/types/store/Auth/state'
+import { INITIAL_STATE } from '~/next/store/Auth/state'
+import TYPES from '~/next/store/Auth/types'
+import Action from '~/next/types/lib/typesafe-actions'
+import State from '~/next/types/store/Auth/state'
 
 const reducer: Reducer<State, Action<State>> = (state = INITIAL_STATE, action) => {
   switch (action.type) {

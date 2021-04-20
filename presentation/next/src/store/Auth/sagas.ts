@@ -1,8 +1,8 @@
 import axios from 'axios'
 import { call, put, all, takeLatest } from 'redux-saga/effects'
-import { setIsLogged } from '~/store/Auth/actions'
-import INITIAL_STATE from '~/store/Auth/state'
-import TYPES from '~/store/Auth/types'
+import { setIsLogged } from '~/next/store/Auth/actions'
+import INITIAL_STATE from '~/next/store/Auth/state'
+import TYPES from '~/next/store/Auth/types'
 
 export function* validateIsLoggedRequest() {
   try {

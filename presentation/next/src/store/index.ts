@@ -1,9 +1,9 @@
 import { createWrapper } from 'next-redux-wrapper'
 import { createStore as createReduxStore, applyMiddleware } from 'redux'
 import createSagaMiddleware from 'redux-saga'
-import rootReducer from '~/store/rootReducer'
-import rootSaga from '~/store/rootSaga'
-import States from '~/types/store/rootStates'
+import rootReducer from '~/next/store/rootReducer'
+import rootSaga from '~/next/store/rootSaga'
+import States from '~/next/types/store/rootStates'
 
 export const store = () => {
   const sagaMiddleware = createSagaMiddleware()

@@ -1,11 +1,11 @@
 import axios from 'axios'
 import MockAdapter from 'axios-mock-adapter'
 import { expectSaga } from 'redux-saga-test-plan'
-import { snackcase, camelcase } from '~/__mocks__/store/Repo/sagas'
-import { reposRequest, setRepos } from '~/store/Repo/actions'
-import { reposRequest as reposRequestSaga } from '~/store/Repo/sagas'
-import INITIAL_STATE from '~/store/Repo/state'
-import '~/__mocks__/nextRouter'
+import { snackcase, camelcase } from '~/next/__mocks__/store/Repo/sagas'
+import { reposRequest, setRepos } from '~/next/store/Repo/actions'
+import { reposRequest as reposRequestSaga } from '~/next/store/Repo/sagas'
+import INITIAL_STATE from '~/next/store/Repo/state'
+import '~/next/__mocks__/nextRouter'
 
 describe('store/Repo/sagas', () => {
   const route = 'https://api.github.com/users/jefferson-william/repos'

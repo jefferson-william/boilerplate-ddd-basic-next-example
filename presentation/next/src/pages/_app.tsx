@@ -1,9 +1,9 @@
 import { FC } from 'react'
 import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
-import wrapperStore from '~/store'
-import theme from '~/styles/theme'
-import { MyAppProps } from '~/types/config/App'
+import wrapperStore from '~/next/store'
+import theme from '~/next/styles/theme'
+import { MyAppProps } from '~/next/types/config/App'
 
 const MyApp: FC<MyAppProps> = ({ Component, pageProps, router }) => (
   <>

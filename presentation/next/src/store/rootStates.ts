@@ -1,5 +1,5 @@
-import INITIAL_STATE_AUTH from '~/store/Auth/state'
-import INITIAL_STATE_REPO from '~/store/Repo/state'
+import INITIAL_STATE_AUTH from '~/next/store/Auth/state'
+import INITIAL_STATE_REPO from '~/next/store/Repo/state'
 
 const rootStates = {
   Auth: INITIAL_STATE_AUTH,

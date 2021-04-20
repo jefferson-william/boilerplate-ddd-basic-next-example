@@ -1,9 +1,9 @@
 import axios from 'axios'
 import { call, put, all, takeLatest } from 'redux-saga/effects'
-import { setRepos } from '~/store/Repo/actions'
-import INITIAL_STATE from '~/store/Repo/state'
-import TYPES from '~/store/Repo/types'
-import Action from '~/types/lib/typesafe-actions'
+import { setRepos } from '~/next/store/Repo/actions'
+import INITIAL_STATE from '~/next/store/Repo/state'
+import TYPES from '~/next/store/Repo/types'
+import Action from '~/next/types/lib/typesafe-actions'
 
 export function* reposRequest(data: Action<string>) {
   try {

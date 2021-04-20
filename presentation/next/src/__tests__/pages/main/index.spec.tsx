@@ -1,9 +1,9 @@
 import { act, waitFor } from '@testing-library/react'
-import { getMoxios } from '~/__mocks__/lib/axios'
-import { camelcase } from '~/__mocks__/store/Repo/sagas'
-import { myRender } from '~/__stubs__/render'
-import Main from '~/pages/main'
-import '~/__mocks__/nextRouter'
+import { getMoxios } from '~/next/__mocks__/lib/axios'
+import { camelcase } from '~/next/__mocks__/store/Repo/sagas'
+import { myRender } from '~/next/__stubs__/render'
+import Main from '~/next/pages/main'
+import '~/next/__mocks__/nextRouter'
 
 describe('pages/main', () => {
   beforeEach(() => {

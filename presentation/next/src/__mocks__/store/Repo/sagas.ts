@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import { Repo } from '~/types/store/Repo/state'
+import { Repo } from '~/next/types/store/Repo/state'
 
 export const snackcase: any = [
   { id: '1', full_name: 'A' },
